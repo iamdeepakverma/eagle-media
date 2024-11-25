@@ -22,6 +22,30 @@ const MainServices = () => {
       image:"https://upload.wikimedia.org/wikipedia/commons/9/9c/My_Verison_Youtube_Studio_Logo_%282015%29.png",
       description:"We'll cover it according to your needs or manage it all, from researching content ideas, scripting, professionally editing, making a super catchy thumbnail to publishing and everything small in between."
     },
+    {
+      id:4,
+      name:"Website Design and Development",
+      image:"https://upload.wikimedia.org/wikipedia/commons/b/b2/Design_responsivo.png",
+      description:"Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals."
+    },
+    {
+      id:5,
+      name:"UI / UX Design",
+      image:"https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg",
+      description:"Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals."
+    },
+    {
+      id:6,
+      name:"Video Editing",
+      image:"https://upload.wikimedia.org/wikipedia/commons/5/54/CCCamp_2019_by_CountCrapula_034.jpg",
+      description:"Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals."
+    },
+    {
+      id:7,
+      name:"Mobile app development",
+      image:"https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_App_Download.png", 
+      description:"Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals."
+    }
   ]
 
   return (
