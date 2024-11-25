@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Renders the main services page of the website. The page includes a hero section,
- * a section showcasing the services, and a call-to-action section.
- *
- * @returns {React.ReactElement} The main services page.
- */
-/******  9747e4cd-601b-4a34-9e50-1d80211724c0  *******/
 
 const MainServices = () => {
   const service=[
