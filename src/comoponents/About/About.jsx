@@ -13,11 +13,11 @@ const About = () => {
           </div>
         </section> */}
 
-       <section className="relative h-[400px] text-center relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
+       <section className="relative h-[450px] text-center relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
        <div className="absolute inset-0 bg-gray-900/80"></div>
 
         <div className="relative flex flex-col items-center justify-center h-full px-4 max-w-4xl mx-auto text-white space-y-6">
-          <h1 className="text-5xl font-bold mb-6">About</h1>
+          <h1 className="text-5xl font-bold sm:pt-10 mb-6">About</h1>
           <p className="text-lg">
             ReyMedia is the brainchild of [Rey-Trix Enterprise Private Limited], a dynamic brand focused on innovative Digital media solutions. With a keen eye for excellence, ReyMedia is committed to delivering cutting-edge digital services that captivate and engage audiences.
           </p>

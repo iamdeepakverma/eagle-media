@@ -1,7 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Renders the main services page of the website. The page includes a hero section,
+ * a section showcasing the services, and a call-to-action section.
+ *
+ * @returns {React.ReactElement} The main services page.
+ */
+/******  9747e4cd-601b-4a34-9e50-1d80211724c0  *******/
+
 const MainServices = () => {
+  const service=[
+    {
+      id:1,
+      name:"Social Media Management",
+      image:"https://upload.wikimedia.org/wikipedia/commons/7/74/Social_media_collection_2020s.png",
+      description:"Our Instagram management service optimizes your brand's presence, boosts engagement, and drives growth through strategic content creation, audience targeting, and performance analytics.",
+    },
+    {
+      id:2,
+      name:"Search Engine Optimization",
+      image:"https://upload.wikimedia.org/wikipedia/commons/9/90/SEO_Types.png",
+      description:"Break the language barrier by getting your videos dubbed by professionals in Hindi to capture the 700 Million Hindi Speaking viewers in India and grow your fanbase worldwide."
+    },
+    {
+      id:3,
+      name:"100% Youtube Management",
+      image:"https://upload.wikimedia.org/wikipedia/commons/9/9c/My_Verison_Youtube_Studio_Logo_%282015%29.png",
+      description:"We'll cover it according to your needs or manage it all, from researching content ideas, scripting, professionally editing, making a super catchy thumbnail to publishing and everything small in between."
+    },
+  ]
+
   return (
     <>
       {/* Hero Section */}
@@ -22,68 +52,24 @@ const MainServices = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Service Card 1 */}
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <div className="mb-6">
-                  <img
-                    src="./office.png"
-                    alt="Social Media"
-                    width={200}
-                    height={200}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-4">
-                  Celebrity Giveaway Sponsorships
-                </h3>
-                <p className="text-gray-600">
-                  Unlock Your Social Potential with Our Social Media Growth
-                  Campaign! We specialize in boosting your online presence,
-                  increasing followers, and driving engagement to help your
-                  brand thrive in the digital world
-                </p>
-              </div>
-
-              {/* Service Card 2 */}
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <div className="mb-6">
-                  <img
-                    src="./office.png"
-                    alt="Youtube Management"
-                    width={200}
-                    height={200}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-4">
-                  100% Youtube Management
-                </h3>
-                <p className="text-gray-600">
-                  We'll cover it according to your needs or manage it all, from
-                  researching content ideas, scripting, professionally editing,
-                  making a super catchy thumbnail to publishing and everything
-                  small in between
-                </p>
-              </div>
-
-              {/* Service Card 3 */}
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <div className="mb-6">
-                  <img
-                    src="./office.png"
-                    alt="Professional Dubbing"
-                    width={200}
-                    height={200}
-                    className="w-full h-auto"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-4">Professional Dubbing</h3>
-                <p className="text-gray-600">
-                  Break the language barrier by getting your videos dubbed by
-                  professionals in Hindi to capture the 700 Million Hindi
-                  Speaking Viewers in India and grow your fanbase worldwide.
-                </p>
-              </div>
+              {
+                service.map((item) => (
+                  <div key={item.id} className="bg-white p-8 rounded-lg shadow-lg">
+                    <div className="mb-6">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        width={200}
+                        height={200}
+                        className="w-full h-auto"
+                      />
+                    </div>
+                    <h3 className="text-xl font-bold mb-4">{item.name}</h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                ))
+              }
+              
             </div>
           </div>
         </section>
@@ -96,7 +82,7 @@ const MainServices = () => {
                 Would you like to start a project with us?
               </h3>
               <Link
-                href="/contact"
+                to="/contact"
                 className="px-8 py-3 text-white bg-violet-600 rounded-md hover:bg-violet-700 transition-colors"
               >
                 CONTACT US
