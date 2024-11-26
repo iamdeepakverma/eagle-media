@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion";
+import { fadeIn } from '../../Variants';
 
 const Services = () => {
 
@@ -38,7 +40,17 @@ const Services = () => {
             {
               service.map((item)=>{
                 return(
-                  <div key={item.id} className="bg-white p-6 rounded-lg border-y-2 shadow-grey shadow-md">
+                  
+                  <motion.div
+                  variants={fadeIn('right', 0.2)}
+               initial={"hidden"}
+               whileInView={"show"}
+               viewport={{ once:   false, amount: 0.7 }}
+               whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+               whileTap={{ scale: 0.95 }}   // Slight scale-down on tap
+               transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+
+                   key={item.id} className="bg-white p-6 rounded-lg border-y-2 shadow-grey shadow-md">
                   <div className="relative h-[200px] mb-0">
                     <img
                       src={item.image}
@@ -49,7 +61,7 @@ const Services = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-4">{item.name}</h3>
                   <p className="text-gray-600">{item.description}</p>
-                </div>
+                </motion.div>
                 )
               })
             }
