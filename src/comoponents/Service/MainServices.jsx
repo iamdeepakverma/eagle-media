@@ -96,7 +96,7 @@ const MainServices = () => {
                whileHover={{ scale: 1.05 }} // Slight scale-up on hover
                whileTap={{ scale: 0.95 }}   // Slight scale-down on tap
                transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
-               
+
                key={item.id}
                className="bg-white p-8 rounded-lg shadow-lg"
              >
@@ -119,7 +119,16 @@ const MainServices = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-white py-16">
+        <motion.section
+          variants={fadeIn("left", 0.2)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+        
+        className="bg-white py-16">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-0">
@@ -133,7 +142,7 @@ const MainServices = () => {
               </Link>
             </div>
           </div>
-        </section>
+        </motion.section>
       </div>
     </>
   );

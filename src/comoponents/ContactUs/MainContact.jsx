@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { fadeIn } from "../../Variants";
 
 const MainContact = () => {
   const [formData, setFormData] = useState({
@@ -27,12 +28,17 @@ const MainContact = () => {
 
   return (
     <>
-      <section className="relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
+      <motion.section
+       initial={{ opacity: 0, y: -50 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ delay: 0.1, duration: 0.6 }}
+      
+      className="relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gray-900/80"></div>
         <div className="relative flex items-center justify-center h-full">
           <h1 className="text-5xl font-bold text-white">Contact Us</h1>
         </div>
-      </section>
+      </motion.section>
       <motion.div
       
     
@@ -174,7 +180,15 @@ const MainContact = () => {
         </motion.form>
 
         <div className="grid md:grid-cols-3 gap-8 bg-gray-100 p-8 rounded-lg p-10 shadow-grey shadow-2xl">
-          <div className="text-center">
+          <motion.div
+           initial={"hidden"}
+           whileInView={"show"}
+           viewport={{ once: false, amount: 0.7 }}
+           whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+           whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+           transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+
+           className="text-center">
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -194,9 +208,17 @@ const MainContact = () => {
             <h2 className="text-xl font-bold mb-2">ABOUT CLUB</h2>
             <p className="text-gray-600">Running Guide</p>
             <p className="text-gray-600">Workouts</p>
-          </div>
+          </motion.div>
 
-          <div className="text-center">
+          <motion.div
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+          
+          className="text-center">
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -216,9 +238,17 @@ const MainContact = () => {
             <h2 className="text-xl font-bold mb-2">PHONE (LANDLINE)</h2>
             <p className="text-gray-600">+912 3 567 8987</p>
             <p className="text-gray-600">+912 5 252 3336</p>
-          </div>
+          </motion.div>
 
-          <div className="text-center">
+          <motion.div
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+          
+          className="text-center">
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +276,7 @@ const MainContact = () => {
             <p className="text-gray-600">
               The Courtyard, Al Quoz 1, Colorado, USA
             </p>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
     </>
