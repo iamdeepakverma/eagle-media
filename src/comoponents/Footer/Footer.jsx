@@ -10,9 +10,6 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial={"hidden"}
-            whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             whileHover={{ scale: 1.05 }} // Slight scale-up on hover
             whileTap={{ scale: 0.95 }} // Slight scale-down on tap
@@ -57,9 +54,6 @@ const Footer = () => {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial={"hidden"}
-            whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             whileHover={{ scale: 1.05 }} // Slight scale-up on hover
             whileTap={{ scale: 0.95 }} // Slight scale-down on tap
@@ -105,9 +99,7 @@ const Footer = () => {
             </ul>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial={"hidden"}
-            whileInView={"show"}
+     
             viewport={{ once: false, amount: 0.7 }}
             whileHover={{ scale: 1.05 }} // Slight scale-up on hover
             whileTap={{ scale: 0.95 }} // Slight scale-down on tap
@@ -145,9 +137,7 @@ const Footer = () => {
             </ul>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
-            initial={"hidden"}
-            whileInView={"show"}
+         
             viewport={{ once: false, amount: 0.7 }}
             whileHover={{ scale: 1.05 }} // Slight scale-up on hover
             whileTap={{ scale: 0.95 }} // Slight scale-down on tap
@@ -171,11 +161,7 @@ const Footer = () => {
           </motion.div>
         </div>
         <motion.div
-          viewport={{ once: false, amount: 0.7 }}
-          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
-          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
-          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
-          className="border-t border-gray-800 mt-12 pt-8 text-center text-sm"
+                 className="border-t border-gray-800 mt-12 pt-8 text-center text-sm"
         >
           <p className="text-gray-400">
             &copy; {new Date().getFullYear()} Eagle Media | All Rights Reserved

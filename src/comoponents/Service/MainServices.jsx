@@ -11,7 +11,7 @@ const MainServices = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/7/74/Social_media_collection_2020s.png",
       description:
-        "Our Instagram management service optimizes your brand's presence, boosts engagement, and drives growth through strategic content creation, audience targeting, and performance analytics.",
+        "Social Media Management involves creating, scheduling, and analyzing content to grow and engage an audience on social media platforms. It helps build brand awareness, drive traffic, and increase sales.",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const MainServices = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/9/90/SEO_Types.png",
       description:
-        "Break the language barrier by getting your videos dubbed by professionals in Hindi to capture the 700 Million Hindi Speaking viewers in India and grow your fanbase worldwide.",
+        "SEO (Search Engine Optimization) is the process of optimizing your website to rank higher in search engine results. This helps increase visibility, attract more organic traffic, and ultimately, drive more business.",
     },
     {
       id: 3,
@@ -35,14 +35,14 @@ const MainServices = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/b/b2/Design_responsivo.png",
       description:
-        "Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals.",
+        "Create a stunning, user-friendly website that reflects your brand's identity. Our design and development team will build a website that is both visually appealing and functional.",
     },
     {
       id: 5,
       name: "UI / UX Design",
       image: "https://upload.wikimedia.org/wikipedia/commons/7/70/Figma.svg",
       description:
-        "Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals.",
+        "Our expert designers will create intuitive and visually appealing user interfaces that enhance user experience. We'll optimize your website's design to ensure seamless navigation, faster load times, and higher user engagement.",
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const MainServices = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/5/54/CCCamp_2019_by_CountCrapula_034.jpg",
       description:
-        "Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals.",
+        "Our skilled video editors will transform your raw footage into captivating visual stories. We'll handle everything from basic editing to advanced post-production techniques, including color correction, sound design, and special effects.",
     },
     {
       id: 7,
@@ -58,7 +58,7 @@ const MainServices = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_App_Download.png",
       description:
-        "Our team of expert web developers will create a visually stunning and user-friendly website that perfectly aligns with your brand's identity and goals.",
+        "Our team of app developers will create innovative and user-friendly mobile apps for iOS and Android platforms. We'll design and develop apps that meet your specific business needs and deliver exceptional user experiences.",
     },
   ];
 
@@ -67,7 +67,7 @@ const MainServices = () => {
       {/* Hero Section */}
       <div>
         <motion.section
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
           className="relative h-[350px] bg-[url('./office.png')] bg-cover bg-center"
@@ -89,7 +89,7 @@ const MainServices = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {service.map((item) => (
                <motion.div
-               variants={fadeIn('right', 0.2)}
+               variants={fadeIn('right', 0.1)}
                initial={"hidden"}
                whileInView={"show"}
                viewport={{ once:   false, amount: 0.7 }}
@@ -120,13 +120,10 @@ const MainServices = () => {
 
         {/* CTA Section */}
         <motion.section
-          variants={fadeIn("left", 0.2)}
-          initial={"hidden"}
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
-          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
-          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+          // viewport={{ once: false, a70mount: 0.7 }}
+          // whileHover={{ scale: 0.90 }} // Slight scale-up on hover
+          // whileTap={{ scale: 0.60}} // Slight scale-down on tap
+          // transition={{ type: "spring", stiffness: 400, damping: 20 }} // Smooth spring effect
         
         className="bg-white py-16">
           <div className="max-w-6xl mx-auto px-6">

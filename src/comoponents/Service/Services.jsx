@@ -10,13 +10,13 @@ const Services = () => {
       id:1,
       name:"Social Media Management",
       image:"https://upload.wikimedia.org/wikipedia/commons/7/74/Social_media_collection_2020s.png",
-      description:"Our Instagram management service optimizes your brand's presence, boosts engagement, and drives growth through strategic content creation, audience targeting, and performance analytics.",
+      description:"Social Media Management involves creating, scheduling, and analyzing content to grow and engage an audience on social media platforms. It helps build brand awareness, drive traffic, and increase sales.",
     },
     {
       id:2,
       name:"SEO Search Engine Optimization",
       image:"https://upload.wikimedia.org/wikipedia/commons/9/90/SEO_Types.png",
-      description:"Break the language barrier by getting your videos dubbed by professionals in Hindi to capture the 700 Million Hindi Speaking viewers in India and grow your fanbase worldwide."
+      description:"SEO (Search Engine Optimization) is the process of optimizing your website to rank higher in search engine results. This helps increase visibility, attract more organic traffic, and ultimately, drive more business."
     },
     {
       id:3,
