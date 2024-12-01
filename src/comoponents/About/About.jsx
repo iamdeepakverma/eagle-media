@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Instagram,
   Youtube,
@@ -7,8 +7,13 @@ import {
 } from "lucide-react";
 import { motion } from "motion/react";
 import { fadeIn } from "../../Variants";
+import Aos from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const About = () => {
+  useEffect(() => {
+		Aos.init({ duration: 1000 })
+	}, []);
   const OurExpertise = [
     { icon: <Instagram />, title: "Social Media Management" },
     { icon: <Youtube />, title: "Video Editing" },
@@ -22,11 +27,7 @@ const About = () => {
   ];
   return (
     <>
-      <motion.section
-       initial={{ opacity: 0, y: -50 }}
-       animate={{ opacity: 1, y: 0 }}
-       transition={{ delay: 0.1, duration: 0.6 }}
-       
+      <section data-aos="fade-down"
        className="relative h-[450px] text-center relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gray-900/80"></div>
 
@@ -44,7 +45,7 @@ const About = () => {
             Near Radisson Blu Hotel, New Delhi 110078
           </p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Who We Are Section */}
       <section className="py-20 px-6">
@@ -67,12 +68,7 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {OurExpertise.map((item, index) => (
-              <motion.div
-              variants={fadeIn('up', 0.5)}
-              initial={"hidden"}
-              whileInView={"show"}
-              viewport={{ once: false,amount:0.7 }}
-
+              <div data-aos="fade-up"
                 key={index}
                 className="flex flex-col items-center text-center"
               >
@@ -81,7 +77,7 @@ const About = () => {
                 </div>
                 <h3 className="text-lg font-semibold">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

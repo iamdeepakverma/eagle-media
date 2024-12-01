@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
+import Aos from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { fadeIn } from "../../Variants";
 
 const MainContact = () => {
+  useEffect(() => {
+		Aos.init({ duration: 1000 })
+	}, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,17 +33,14 @@ const MainContact = () => {
 
   return (
     <>
-      <motion.section
-       initial={{ opacity: 0, y: -50 }}
-       animate={{ opacity: 1, y: 0 }}
-       transition={{ delay: 0.1, duration: 0.6 }}
-      
+      <section      
+      data-aos="fade-down"
       className="relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
         <div className="absolute inset-0 bg-gray-900/80"></div>
         <div className="relative flex items-center justify-center h-full">
           <h1 className="text-5xl font-bold text-white">Contact Us</h1>
         </div>
-      </motion.section>
+      </section>
       <motion.div
       
     
@@ -48,11 +50,8 @@ const MainContact = () => {
           Any questions or remarks? Just write us a message!
         </p>
 
-        <motion.form
-         whileHover={{ scale: [null, 1.2, 1.1] }}
-         transition={{ duration: 0.3 }}
-      
-
+        <form data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom"
           onSubmit={handleSubmit}
           className="max-w-2xl mx-auto space-y-6 mb-20 p-10 shadow-grey shadow-2xl"
         >
@@ -177,7 +176,7 @@ const MainContact = () => {
           >
             SUBMIT
           </button>
-        </motion.form>
+        </form>
 
         <div className="grid md:grid-cols-3 gap-8 bg-gray-100 p-8 rounded-lg p-10 shadow-grey shadow-2xl">
           <motion.div
