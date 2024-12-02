@@ -16,10 +16,9 @@ const MainServices = () => {
     <>
       {/* Hero Section */}
       <div >
-        <section className="relative h-[350px] bg-[url('./office.png')] bg-cover bg-center"
-        >
-          <div className="absolute inset-0 bg-gray-900/80"></div>
+        <section className="relative h-[350px]  bg-[#9B7EBD]">        
           <div className="relative flex items-center justify-center h-full">
+
             <h1 className="text-5xl font-bold text-white">Services</h1>
           </div>
         </section>

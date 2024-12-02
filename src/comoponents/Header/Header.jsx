@@ -1,6 +1,7 @@
 import React from 'react'
 import { fadeIn } from '../../Variants'
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -36,7 +37,9 @@ const Header = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
 
              className="bg-purple-600 text-white px-8 py-3 rounded-md hover:bg-purple-700 transition-colors">
+              <Link to="/contact">
               GET STARTED
+              </Link>
             </motion.button>
           </div>
           <div className="relative lg:h-[400px] md:h-[400px] sm:h-[200px]">

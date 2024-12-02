@@ -23,7 +23,7 @@ const Coungter = () => {
           <div className="bg-purple-600 rounded-3xl p-8 transform transition-transform hover:scale-105">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-purple-300 flex items-center justify-center">
               <span className="text-4xl font-bold text-white">
-              <CountUp end={92} duration={4.5} />
+              <CountUp end={4} duration={4.5} />
               </span>
             </div>
             <h3 className="text-purple-200 font-semibold tracking-wider">
@@ -37,7 +37,7 @@ const Coungter = () => {
            className="bg-purple-600 rounded-3xl p-8 transform transition-transform hover:scale-105">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-purple-300 flex items-center justify-center">
               <span className="text-4xl font-bold text-white">
-              <CountUp end={37} duration={4.5} />
+              <CountUp end={15} duration={4.5} />
               </span>
             </div>
             <h3 className="text-purple-200 font-semibold tracking-wider">
@@ -51,7 +51,7 @@ const Coungter = () => {
            className="bg-purple-600 rounded-3xl p-8 transform transition-transform hover:scale-105">
             <div className="w-24 h-24 mx-auto mb-4 rounded-full border-4 border-purple-300 flex items-center justify-center">
               <span className="text-4xl font-bold text-white">
-              <CountUp end={25} duration={4.5} />
+              <CountUp end={10} duration={4.5} />
               </span>
             </div>
             <h3 className="text-purple-200 font-semibold tracking-wider">

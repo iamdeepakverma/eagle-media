@@ -5,8 +5,6 @@ import {
   Wrench,
   Mic,
 } from "lucide-react";
-import { motion } from "motion/react";
-import { fadeIn } from "../../Variants";
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
@@ -25,40 +23,91 @@ const About = () => {
     { icon: <Mic />, title: "ADS" },
     { icon: <Mic />, title: "Google My Business" },
   ];
+
+  const teamMembers = [
+    { name: 'Jane Doe', role: 'CEO & Founder', image: 'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?t=st=1733166554~exp=1733170154~hmac=c9b24b12250def60d9f94c4cee0f7275ee017519b9168f27e8a9f4c6ab2a6ef0&w=900' },
+    { name: 'John Smith', role: 'CTO', image: 'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?t=st=1733166554~exp=1733170154~hmac=c9b24b12250def60d9f94c4cee0f7275ee017519b9168f27e8a9f4c6ab2a6ef0&w=900' },
+    { name: 'Alice Johnson', role: 'Design Lead', image: 'https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?t=st=1733166554~exp=1733170154~hmac=c9b24b12250def60d9f94c4cee0f7275ee017519b9168f27e8a9f4c6ab2a6ef0&w=900' },
+  ]
   return (
     <>
       <section data-aos="fade-down"
-       className="relative h-[450px] text-center relative h-[350px] bg-[url('./office.png')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gray-900/80"></div>
+       className="relative h-[450px] text-center relative h-[350px] bg-[#9B7EBD]">
+        {/* <div className="absolute inset-0 bg-gray-900/80"></div> */}
 
         <div className="relative flex flex-col items-center justify-center h-full px-4 max-w-4xl mx-auto text-white space-y-6">
           <h1 className="text-5xl font-bold sm:pt-10 mb-6">About</h1>
           <p className="text-lg">
-            ReyMedia is the brainchild of [Rey-Trix Enterprise Private Limited],
-            a dynamic brand focused on innovative Digital media solutions. With
-            a keen eye for excellence, ReyMedia is committed to delivering
-            cutting-edge digital services that captivate and engage audiences.
+          Eagle's Group is a leading digital marketing agency based in Indore, India. We specialize in providing comprehensive digital marketing solutions tailored to meet the unique needs of businesses. Our goal is to help our clients achieve their online marketing objectives through innovative strategies and cutting-edge techniques
+
           </p>
-          <p className="text-sm">
-            Address: YC Co-Working Space, Top Floor, Plot No. 84 Dwarka Sec-13
-            <br />
-            Near Radisson Blu Hotel, New Delhi 110078
+        </div>
+      </section>
+      {/* dskjfbhkebiuf */}
+      <div className="bg-gray-50 min-h-screen">
+      {/* Mission Statement */}
+      <section 
+      data-aos="fade-right"
+      className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Mission</h2>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center">
+            We are dedicated to creating innovative digital solutions that empower businesses and individuals to thrive in the modern world. Our passion for technology and commitment to excellence drive us to deliver outstanding results for our clients.
           </p>
         </div>
       </section>
 
-      {/* Who We Are Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Who we are</h2>
-          <p className="text-gray-600">
-            ReyMedia is the social media department of the firm Rey-Trix
-            Enterprise Pvt Ltd. ReyMedia specializes in growing the top 1% of
-            Entrepreneurs' and Businesses' digital presence through social media
-            growth campaigns and social media management.
-          </p>
+      {/* Team Members */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <div 
+              data-aos="fade-left"
+              key={index} className="text-center">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  width={200}
+                  height={200}
+                  className="rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-xl font-semibold">{member.name}</h3>
+                <p className="text-gray-600">{member.role}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
+
+      {/* Values */}
+      <section className="py-16 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center">Our Values</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div 
+            data-aos="fade-right"
+            className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Innovation</h3>
+              <p className="text-gray-700">We constantly push the boundaries of what's possible in the digital realm.</p>
+            </div>
+            <div 
+            data-aos="fade-up"
+            className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Collaboration</h3>
+              <p className="text-gray-700">We believe in the power of teamwork and open communication.</p>
+            </div>
+            <div 
+            data-aos="fade-left"
+            className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Excellence</h3>
+              <p className="text-gray-700">We strive for the highest quality in everything we do.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
       {/* Our Expertise Section */}
       <section className="py-20 px-6 bg-gray-50 ">
@@ -80,6 +129,15 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="py-16 bg-blue-600 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
+          <p className="text-xl mb-8">Let's turn your vision into reality</p>
+          <button className="bg-white text-blue-600 font-bold py-2 px-4 rounded-lg hover:bg-blue-100 transition duration-300">
+            Contact Us
+          </button>
         </div>
       </section>
     </>
