@@ -1,76 +1,74 @@
+'use client'
+
 import React, { useEffect } from 'react'
 import { Facebook, Twitter, Instagram } from 'lucide-react'
-import { Link } from 'react-router-dom'
-import Aos from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import {Link} from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const HomeAbout = () => {
   useEffect(() => {
-		Aos.init({ duration: 1000 })
-	}, []);
+    AOS.init({ duration: 1000, once: true })
+  }, [])
 
   return (
-    <>
-     <div className="min-h-screen bg-gray-200 flex items-center justify-center p-8">
-      <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div
-          data-aos="fade-right"
-         className="relative h-[400px] w-full">
-
+    <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div
+            data-aos="fade-right"
+            className="relative h-[300px] sm:h-[400px] w-full rounded-lg overflow-hidden shadow-lg"
+          >
             <img
-              src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg?t=st=1733167333~exp=1733170933~hmac=4e89752f5878ea16f617f5f4aa4b7ba51d0c67e43bdcd2bff4d09a2e9fa6bfd2&w=900"
+              src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg?w=1380&t=st=1733167333~exp=1733170933~hmac=4e89752f5878ea16f617f5f4aa4b7ba51d0c67e43bdcd2bff4d09a2e9fa6bfd2"
               alt="Professional in office"
-              fill
-              className="object-cover rounded-lg"
+              layout="fill"
+              objectFit="cover"
               priority
+              className="transition-transform duration-300 hover:scale-105"
             />
           </div>
-          {/* Left Column - Content */}
+          
           <div 
-          data-aos="fade-left"
-          className="space-y-6">
-            <h1 className="text-5xl font-bold text-gray-900">ABOUT US</h1>
-            {/* <p className="text-xl text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing
-            </p> */}
-            <p className="text-gray-600 leading-relaxed">
-            Eagle's Group is a leading digital marketing agency based in Indore, India. We specialize in providing comprehensive digital marketing solutions tailored to meet the unique needs of businesses. Our goal is to help our clients achieve their online marketing objectives through innovative strategies and cutting-edge techniques
-            .
+            data-aos="fade-left"
+            className="space-y-6"
+          >
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">ABOUT US</h1>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Eagle's Group is a leading digital marketing agency based in Indore, India. We specialize in providing comprehensive digital marketing solutions tailored to meet the unique needs of businesses. Our goal is to help our clients achieve their online marketing objectives through innovative strategies and cutting-edge techniques.
             </p>
-            <button
-            data-aos="flip-right"
-             className="bg-[#9333EA] text-white px-8 py-3 hover:bg-gray-700 transition-colors">
-                <Link to="/about" className="text-white">
-              Read More
-                </Link>
-            </button>
+            <div className="pt-4">
+              <Link to="/about" passHref>
+                <button
+                  data-aos="flip-right"
+                  className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+                >
+                  Read More
+                </button>
+              </Link>
+            </div>
             
-            {/* Social Media Icons */}
-            <div className="flex gap-6 pt-4">
-              <a href="#" className="text-black hover:text-[#9333EA]">
-                <Facebook className="w-6 h-6" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="text-black hover:text-[#9333EA]">
-                <Twitter className="w-6 h-6" />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-black hover:text-[#9333EA]">
-                <Instagram className="w-6 h-6" />
-                <span className="sr-only">Instagram</span>
-              </a>
+            <div className="flex gap-6 pt-6">
+              <SocialIcon href="#" icon={<Facebook />} label="Facebook" />
+              <SocialIcon href="#" icon={<Twitter />} label="Twitter" />
+              <SocialIcon href="#" icon={<Instagram />} label="Instagram" />
             </div>
           </div>
-
-          {/* Right Column - Image */}
-        
         </div>
       </div>
-    </div>
-    </>
+    </section>
   )
 }
 
+const SocialIcon = ({ href, icon, label }) => (
+  <a 
+    href={href} 
+    className="text-gray-600 hover:text-purple-600 transition-colors duration-300"
+    aria-label={label}
+  >
+    {React.cloneElement(icon, { className: "w-6 h-6" })}
+  </a>
+)
+
 export default HomeAbout
+

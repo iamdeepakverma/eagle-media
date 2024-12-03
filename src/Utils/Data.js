@@ -77,3 +77,27 @@ export const mainservice = [
     },
 
   ]
+
+ export const testimonials = [
+    {
+      id: 1,
+      name: "John Doe",
+      role: "CEO, TechCorp",
+      content: "This product has revolutionized our workflow. The intuitive interface and powerful features have significantly boosted our team's productivity. Highly recommended for any business looking to streamline their processes!",
+      avatar: "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?t=st=1733252840~exp=1733256440~hmac=973bd389792ac8162c9374e60df96e4632cf44965066d02846decffb20834534&w=740"
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      role: "Designer, CreativeCo",
+      content: "I've never used a more intuitive and powerful tool. The design capabilities are unmatched, and it has become an indispensable part of my creative process. It's truly a game-changer for designers everywhere.",
+      avatar: "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?t=st=1733252840~exp=1733256440~hmac=973bd389792ac8162c9374e60df96e4632cf44965066d02846decffb20834534&w=740"
+    },
+    {
+      id: 3,
+      name: "Mike Johnson",
+      role: "Developer, CodeMasters",
+      content: "The support team is fantastic, and the product exceeds all expectations. As a developer, I appreciate the robust API and seamless integrations. It has significantly reduced our development time and improved our code quality.",
+      avatar: "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg?t=st=1733252840~exp=1733256440~hmac=973bd389792ac8162c9374e60df96e4632cf44965066d02846decffb20834534&w=740"
+    }
+  ]

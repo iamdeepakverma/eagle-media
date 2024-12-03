@@ -203,9 +203,8 @@ const MainContact = () => {
                 />
               </svg>
             </div>
-            <h2 className="text-xl font-bold mb-2">ABOUT CLUB</h2>
-            <p className="text-gray-600">Running Guide</p>
-            <p className="text-gray-600">Workouts</p>
+            <h2 className="text-xl font-bold mb-2">Gmail ID</h2>
+            <p className="text-gray-600">info@vgautomation.in</p>
           </motion.div>
 
           <motion.div
@@ -234,8 +233,8 @@ const MainContact = () => {
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-2">PHONE (LANDLINE)</h2>
-            <p className="text-gray-600">+912 3 567 8987</p>
-            <p className="text-gray-600">+912 5 252 3336</p>
+            <p className="text-gray-600">+91 8519022399, +91 747052664</p>
+            <p className="text-gray-600">+91 78287 58247</p>
           </motion.div>
 
           <motion.div
@@ -270,9 +269,8 @@ const MainContact = () => {
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-2">OUR OFFICE LOCATION</h2>
-            <p className="text-gray-600">The Interior Design Studio Company</p>
             <p className="text-gray-600">
-              The Courtyard, Al Quoz 1, Colorado, USA
+              Aalok Nagar Kanadiya Road Indore 452016 (M.P.)
             </p>
           </motion.div>
         </div>

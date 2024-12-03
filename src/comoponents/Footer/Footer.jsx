@@ -66,7 +66,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  to="#"
+                  to="/"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Home
@@ -74,7 +74,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/services"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Services
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/about"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   About Us
@@ -90,7 +90,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="#"
+                  to="/contact"
                   className="text-gray-400 hover:text-white transition-colors duration-300"
                 >
                   Contact
@@ -151,12 +151,12 @@ const Footer = () => {
               className="flex items-center text-gray-400 hover:text-white transition-colors duration-300 mb-2"
             >
               <Mail className="w-5 h-5 mr-2" />
-              info@Eaglemedia.in
+              info@vgautomation.in  
             </a>
             <p className="text-gray-400">
-              123 Business Street, Suite 100
+            Aalok Nagar Kanadiya Road 
               <br />
-              New York, NY 10001
+              Indore 452016 (M.P.)
             </p>
           </motion.div>
         </div>
@@ -164,7 +164,7 @@ const Footer = () => {
                  className="border-t border-gray-800 mt-12 pt-8 text-center text-sm"
         >
           <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} Eagle Media | All Rights Reserved
+            &copy; {new Date().getFullYear()} vgautomation.in | All Rights Reserved
           </p>
         </motion.div>
       </div>
