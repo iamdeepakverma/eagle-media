@@ -35,7 +35,7 @@ const HomeAbout = () => {
           >
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">ABOUT US</h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Eagle's Group is a leading digital marketing agency based in Indore, India. We specialize in providing comprehensive digital marketing solutions tailored to meet the unique needs of businesses. Our goal is to help our clients achieve their online marketing objectives through innovative strategies and cutting-edge techniques.
+              ADS Mini is a leading digital marketing agency based in Indore, India. We specialize in providing comprehensive digital marketing solutions tailored to meet the unique needs of businesses. Our goal is to help our clients achieve their online marketing objectives through innovative strategies and cutting-edge techniques.
             </p>
             <div className="pt-4">
               <Link to="/about" passHref>

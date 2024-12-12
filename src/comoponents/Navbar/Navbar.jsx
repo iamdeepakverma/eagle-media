@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <span className="text-xl font-bold text-purple-600">VG Automation</span>
+              <span className="text-xl font-bold text-purple-600">ADS Mini</span>
             </Link>
           </div>
           <div className="hidden md:block">
