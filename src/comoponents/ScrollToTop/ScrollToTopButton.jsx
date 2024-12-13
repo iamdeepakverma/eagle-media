@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const phoneNumber = "+917828758247"; // Replace with the actual phone number
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -45,6 +46,42 @@ export const ScrollToTopButton = () => {
       >
         <ChevronUp className="h-6 w-6 text-white" />
       </button>
+       <div 
+        onClick={scrollToTop}
+        className='fixed bottom-4 right-16 z-50 rounded-full pl-1 pr-1 bg-[#25D366] hover:scale-125 transition-all duration-300'>
+              <Link
+              to="https://wa.me/+918519022399?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+              target="_blank"
+            >
+              <button className='p-2' >
+                <i style={{ color: "white" }} className="fa-brands fa-whatsapp"></i>
+              </button>
+            </Link>
+          </div>
+       <div 
+        onClick={scrollToTop}
+        className='fixed bottom-4 right-28 z-50 rounded-full pl-1 pr-1 bg-[#F505A2] hover:scale-125 transition-all duration-300'>
+              <Link
+              to="https://www.instagram.com/ads.mini/"
+              target="_blank"
+            >
+              <button className='p-2' >
+              <i style={{ color: "white" }} class="fa-brands fa-instagram"></i>
+              </button>
+            </Link>
+          </div>
+       <div 
+        onClick={scrollToTop}
+        className='fixed bottom-4 right-40 z-50 rounded-full pl-1 pr-1 bg-[#0B57D0] hover:scale-125 transition-all duration-300'>
+              <Link
+               to={`tel:${phoneNumber}`}
+              target="_blank"
+            >
+              <button className='p-2' >
+              <i style={{ color: "white" }} class="fa-solid fa-phone"></i>
+              </button>
+            </Link>
+          </div>
     </>
   );
 };
