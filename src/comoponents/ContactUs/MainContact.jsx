@@ -204,7 +204,7 @@ const MainContact = () => {
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-2">Gmail ID</h2>
-            <p className="text-gray-600">info@vgautomation.in</p>
+            <p className="text-gray-600">adsminicompany@gmail.com</p>
           </motion.div>
 
           <motion.div

@@ -51,7 +51,7 @@ const HomeAbout = () => {
             <div className="flex gap-6 pt-6">
               <SocialIcon href="#" icon={<Facebook />} label="Facebook" />
               <SocialIcon href="#" icon={<Twitter />} label="Twitter" />
-              <SocialIcon href="#" icon={<Instagram />} label="Instagram" />
+              <SocialIcon href="https://www.instagram.com/ads.mini/" icon={<Instagram />} label="Instagram" />
             </div>
           </div>
         </div>
