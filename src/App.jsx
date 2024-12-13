@@ -8,6 +8,7 @@ import About from "./comoponents/About/About";
 import MainContact from "./comoponents/ContactUs/MainContact";
 import PageLoader from "./comoponents/Loader/PageLoader";
 import { useEffect } from "react";
+import ScrollToTop from "./comoponents/ScrollToTop/ScrollToTop";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
       ) : (
         <Router>
           <Navbar />
+          <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<MainServices />} />
@@ -35,7 +37,7 @@ function App() {
             <Route path="/contact" element={<MainContact />} />
           </Routes>
           <Footer />
-        </Router>
+        </Router> 
       )}
     </div>
   );
