@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "+917828758247"; // Replace with the actual phone number
+  const phoneNumber = "+918519022399"; // Replace with the actual phone number
 
   useEffect(() => {
     const toggleVisibility = () => {
