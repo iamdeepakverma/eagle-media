@@ -1,56 +1,80 @@
-import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { motion } from "framer-motion";
-import { fadeIn } from '../../Variants';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async'; // For SEO meta tags
 import { service } from "../../Utils/Data";
 import Aos from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+
 const Services = () => {
 
   useEffect(() => {
-		Aos.init({ duration: 1000 })
-	}, []);
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
-   <>
-    <section id="services" className="bg-gray-50 lg:pt-10 md:pt-10 sm:pt-40 ">
+    <>
+      {/* Helmet for SEO */}
+      <Helmet>
+        <title>Our Services | ads mini - Digital Marketing Agency</title>
+        <meta 
+          name="description" 
+          content="Explore ads mini's comprehensive digital marketing services including SEO, social media management, content marketing, PPC, and more. Drive your business growth today!" 
+        />
+        <meta 
+          name="keywords" 
+          content="digital marketing services, SEO services, social media management, content marketing, PPC services, online advertising, business growth, digital marketing agency, web design,web development" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.adsmini.com/services" />
+      </Helmet>
+
+      <section id="services" className="bg-gray-50 lg:pt-10 md:pt-10 sm:pt-40">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          {/* Main Heading */}
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-10">
             Our Services
-          </h2>
-          
+          </h1>
+
+          <p className="text-center text-gray-700 mb-8 w-8/12 m-auto">
+            At <strong>ads mini</strong>, we provide a wide range of digital marketing solutions designed to enhance your online presence and drive business growth. From SEO to social media management, our services are tailored to meet your specific needs.
+          </p>
+
           {/* Service Cards */}
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Social Media Management */}
-            {
-              service.map((item)=>{
-                return(
-                  
-                  <div data-aos="fade-right"
-
-                   key={item.id} className="bg-white p-6 rounded-lg border-y-2 shadow-grey shadow-md">
+            {service.map((item) => {
+              return (
+                <div 
+                  data-aos="fade-right" 
+                  key={item.id} 
+                  className="bg-white p-6 rounded-lg border-y-2 shadow-grey shadow-md"
+                >
                   <div className="relative h-[200px] mb-0">
                     <img
                       src={item.image}
-                      alt="Social Media Management"
-                      fill
-                      className="object-contain"
+                      alt={item.name}
+                      className="object-contain w-full h-full"
                     />
                   </div>
-                  <h3 className="text-xl font-bold mb-4">{item.name}</h3>
+                  <h2 className="text-xl font-bold mb-4">{item.name}</h2>
                   <p className="text-gray-600">{item.description}</p>
                 </div>
-                )
-              })
-            }
-
+              );
+            })}
           </div>
-          <div className='flex items-center justify-center text-center p-10'>
-            <Link to="/services" className="bg-purple-600 text-white px-8 py-3 rounded-md hover:bg-purple-700 transition-colors ">See More</Link>
+
+          {/* Call to Action */}
+          <div className="flex items-center justify-center text-center p-10">
+            <Link 
+              to="/services" 
+              className="bg-purple-600 text-white px-8 py-3 rounded-md hover:bg-purple-700 transition-colors"
+            >
+              Explore All Services
+            </Link>
           </div>
         </div>
       </section>
-   </>
-  )
-}
+    </>
+  );
+};
 
-export default Services
+export default Services;

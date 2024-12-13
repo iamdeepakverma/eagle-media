@@ -20,7 +20,7 @@ const HomeAbout = () => {
             className="relative h-[300px] sm:h-[400px] w-full rounded-lg overflow-hidden shadow-lg"
           >
             <img
-              src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg?w=1380&t=st=1733167333~exp=1733170933~hmac=4e89752f5878ea16f617f5f4aa4b7ba51d0c67e43bdcd2bff4d09a2e9fa6bfd2"
+              src="https://i.postimg.cc/NMpK0ThQ/businessman-feeling-confident-his-team.jpgf"
               alt="Professional in office"
               layout="fill"
               objectFit="cover"
@@ -48,11 +48,11 @@ const HomeAbout = () => {
               </Link>
             </div>
             
-            <div className="flex gap-6 pt-6">
+            {/* <div className="flex gap-6 pt-6">
               <SocialIcon href="#" icon={<Facebook />} label="Facebook" />
               <SocialIcon href="#" icon={<Twitter />} label="Twitter" />
               <SocialIcon href="https://www.instagram.com/ads.mini/" icon={<Instagram />} label="Instagram" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
