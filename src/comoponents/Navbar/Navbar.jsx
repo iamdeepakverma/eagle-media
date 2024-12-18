@@ -13,9 +13,15 @@ const Navbar = () => {
     <header className="shadow-lg bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
+        <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <span className="text-xl font-bold text-purple-600">ADS Mini</span>
+              <img
+                src="/adsmini.png"
+                alt="ADS Mini Logo"
+                width={120}
+                height={40}
+                className="w-auto  h-20 lg:h-32 md:h-28  sm:h-10"
+              />
             </Link>
           </div>
           <div className="hidden md:block">
