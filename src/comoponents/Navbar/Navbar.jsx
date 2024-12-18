@@ -20,7 +20,7 @@ const Navbar = () => {
                 alt="ADS Mini Logo"
                 width={120}
                 height={40}
-                className="w-auto  h-20 lg:h-32 md:h-28  sm:h-10"
+                className="w-auto  h-20 lg:h-20 md:h-24  sm:h-10"
               />
             </Link>
           </div>
