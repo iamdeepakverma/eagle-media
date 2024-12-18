@@ -48,7 +48,7 @@ const Services = () => {
                   key={item.id} 
                   className="bg-white p-6 rounded-lg border-y-2 shadow-grey shadow-md"
                 >
-                  <div className="relative h-[200px] mb-0">
+                  <div  className="relative h-[200px] mb-0">
                     <img
                       src={item.image}
                       alt={item.name}

@@ -10,7 +10,7 @@ import PageLoader from "./comoponents/Loader/PageLoader";
 import { useEffect } from "react";
 import ScrollToTop from "./comoponents/ScrollToTop/ScrollToTop";
 import { ScrollToTopButton } from "./comoponents/ScrollToTop/ScrollToTopButton";
-import Whatapp from "./comoponents/ScrollToTop/Whatapp";
+import AlinaLoader from "./comoponents/Loader/AlinaLoader";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,6 +28,7 @@ function App() {
     <div className="min-h-screen bg-[#F3F1F6]">
       {loading ? (
         <PageLoader />
+        // <AlinaLoader/>
       ) : (
         <Router>
           <Navbar />

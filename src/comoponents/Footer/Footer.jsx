@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from "lucide-react";
+import { Phone, Instagram, Linkedin, Mail,MessageCircle  } from "lucide-react";
 
 
 const Footer = () => {
+  const phoneNumber = "+918519022399";
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -19,32 +20,28 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <Link
-                to="#"
+                to={`tel:${phoneNumber}`}
+                target="_blank"
                 className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
               >
-                <Facebook className="w-6 h-6" />
-                <span className="sr-only">Facebook</span>
+                <Phone className="w-6 h-6" />
+                {/* <span className="sr-only">Facebook</span> */}
               </Link>
-              {/* <Link
-                to="#"
-                className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
-              >
-                <Twitter className="w-6 h-6" />
-                <span className="sr-only">Twitter</span>
-              </Link> */}
               <Link
                 to="https://www.instagram.com/ads.mini/"
+                target="_blank"
                 className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
               >
                 <Instagram className="w-6 h-6" />
-                <span className="sr-only">Instagram</span>
+                {/* <span className="sr-only">Instagram</span> */}
               </Link>
               <Link
-                to="#"
+                to="https://wa.me/+918519022399?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                target="_blank"
                 className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
               >
-                <Linkedin className="w-6 h-6" />
-                <span className="sr-only">LinkedIn</span>
+                <MessageCircle className="w-6 h-6" />
+                {/* <span className="sr-only">LinkedIn</span> */}
               </Link>
             </div>
           </div>
