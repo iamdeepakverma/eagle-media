@@ -1,0 +1,24 @@
+{
+    "short_name": "Adsmini",
+    "name": "Adsmini",
+    "icons": [
+      {
+        "src": "favicon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "favicon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#317EFB",
+    "background_color": "#ffffff",
+    "description": "Ads mini is a leading digital marketing agency specializing in SEO, social media marketing, PPC, and content marketing to help businesses grow their online presence.",
+    "orientation": "portrait",
+    "lang": "en"
+  }
+  
