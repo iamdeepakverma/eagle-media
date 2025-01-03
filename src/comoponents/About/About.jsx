@@ -56,72 +56,32 @@ const About = () => {
         <title>About Us - Eagle's Group Digital Marketing Agency</title>
         <meta
           name="description"
-          content="Learn about ads mini, a leading digital marketing agency specializing in SEO, web development, and social media management."
+          content="Learn about ads mini, a leading digital marketing agency specializing in SEO, web development, and social media management.  Adsmini.com is a leading digital marketing agency based in Indore,
+              India. We specialize in providing comprehensive digital marketin"
         />
         <meta
           name="keywords"
-          content="About ads mini, Digital Marketing, SEO, Web Development, Indore,social media management,"
+          content="About ads mini, Digital Marketing, SEO, Web Development, Indore,social media management,adsmini in indore, adsmini agency, ppc,"
         />
         <meta name="author" content="Ads mini" />
         <link rel="canonical" href="https://adsmini.com/about" />
       </Helmet>
-      <section
-        data-aos="fade-down"
-        className="relative h-[450px] text-center relative h-[350px] bg-[#9B7EBD]"
-      >
-        {/* <div className="absolute inset-0 bg-gray-900/80"></div> */}
-
-        <div className="relative flex flex-col items-center justify-center h-full px-4 max-w-4xl mx-auto text-white space-y-6">
-          <h1 className="text-5xl font-bold sm:pt-10 mb-6">About</h1>
-          <p className="text-lg">
-            Adsmini.com is a leading digital marketing agency based in Indore,
-            India. We specialize in providing comprehensive digital marketing
-            solutions tailored to meet the unique needs of businesses. Our goal
-            is to help our clients achieve their online marketing objectives
-            through innovative strategies and cutting-edge techniques
-          </p>
-        </div>
-      </section>
       {/* dskjfbhkebiuf */}
       <div className="bg-gray-50 min-h-screen">
         {/* Mission Statement */}
         <section data-aos="fade-right" className="py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Mission</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">About</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center">
-              We are dedicated to creating innovative digital solutions that
-              empower businesses and individuals to thrive in the modern world.
-              Our passion for technology and commitment to excellence drive us
-              to deliver outstanding results for our clients.
+              Adsmini.com is a leading digital marketing agency based in Indore,
+              India. We specialize in providing comprehensive digital marketing
+              solutions tailored to meet the unique needs of businesses. Our
+              goal is to help our clients achieve their online marketing
+              objectives through innovative strategies and cutting-edge
+              techniques
             </p>
           </div>
         </section>
-
-        {/* Team Members */}
-        {/* <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">
-              Meet Our Team
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <div data-aos="fade-left" key={index} className="text-center">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="rounded-full mx-auto mb-4"
-                  />
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-gray-600">{member.role}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
-
-        {/* Values */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-12 text-center">Our Values</h2>
@@ -161,7 +121,7 @@ const About = () => {
 
       {/* Our Expertise Section */}
       <section className="py-20 px-6 bg-gray-50 ">
-        <div className="max-w-4xl mx-auto pt-20 pb-20 shadow-black shadow-lg">
+        <div className="max-w-4xl mx-auto pt-20 pb-20 shadow-black-800 shadow-mdc">
           <h2 className="text-3xl font-bold text-center mb-16">
             Our Expertise
           </h2>

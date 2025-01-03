@@ -14,19 +14,6 @@ const Services = () => {
   return (
     <>
       {/* Helmet for SEO */}
-      <Helmet>
-        <title>Our Services | ads mini - Digital Marketing Agency</title>
-        <meta 
-          name="description" 
-          content="Explore ads mini's comprehensive digital marketing services including SEO, social media management, content marketing, PPC, and more. Drive your business growth today!" 
-        />
-        <meta 
-          name="keywords" 
-          content="digital marketing services, SEO services, social media management, content marketing, PPC services, online advertising, business growth, digital marketing agency, web design,web development" 
-        />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.adsmini.com/services" />
-      </Helmet>
 
       <section id="services" className="bg-gray-50 lg:pt-10 md:pt-10 sm:pt-40">
         <div className="container mx-auto px-4">

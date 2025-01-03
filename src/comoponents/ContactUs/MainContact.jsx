@@ -1,59 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import Aos from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Aos from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import { fadeIn } from "../../Variants";
 
 const MainContact = () => {
   useEffect(() => {
-		Aos.init({ duration: 1000 })
-	}, []);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    companyName: "",
-    website: "",
-    services: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Handle form submission logic here
-  };
-
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
-      <section      
-      data-aos="fade-down"
-      className="relative h-[350px]  bg-[#9B7EBD]">
-        <div className="relative flex items-center justify-center h-full">
-          <h1 className="text-5xl font-bold text-white">Contact Us</h1>
-        </div>
-      </section>
-      <motion.div
-      
-    
-      className="max-w-6xl mx-auto px-4 py-16">
+      <motion.div className="max-w-6xl mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-2">Contact Us</h1>
         <p className="text-center text-gray-600 mb-12">
           Any questions or remarks? Just write us a message!
         </p>
 
-        <form data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"
-          onSubmit={handleSubmit}
+        <form
+          data-aos="fade-up"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          data-aos-anchor-placement="center-bottom"
           className="max-w-2xl mx-auto space-y-6 mb-20 p-10 shadow-grey shadow-2xl"
         >
+          <input
+            type="hidden"
+            name="access_key"
+            value="83655ce9-20a5-48e0-bce3-64e866d60d26"
+          />
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <label
@@ -68,8 +42,6 @@ const MainContact = () => {
                 name="email"
                 className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
                 placeholder="Enter a valid email address"
-                value={formData.email}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -86,8 +58,6 @@ const MainContact = () => {
                 name="name"
                 className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
                 placeholder="Enter your Name"
-                value={formData.name}
-                onChange={handleChange}
                 required
               />
             </div>
@@ -106,46 +76,6 @@ const MainContact = () => {
               name="phone"
               className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
               placeholder="Enter your phone number"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div>
-            <label
-              htmlFor="companyName"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Your Company's Name
-            </label>
-            <input
-              type="text"
-              id="companyName"
-              name="companyName"
-              className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
-              placeholder="Enter your company name"
-              value={formData.companyName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <div>
-            <label
-              htmlFor="website"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Company's Website
-            </label>
-            <input
-              type="url"
-              id="website"
-              name="website"
-              className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
-              placeholder="Enter your company website"
-              value={formData.website}
-              onChange={handleChange}
               required
             />
           </div>
@@ -163,8 +93,6 @@ const MainContact = () => {
               className="w-full px-4 py-3 rounded-md bg-white border-transparent focus:border-teal-500 focus:bg-white focus:ring-0"
               placeholder="Tell us about the services you're interested in"
               rows={4}
-              value={formData.services}
-              onChange={handleChange}
               required
             />
           </div>
@@ -177,16 +105,16 @@ const MainContact = () => {
           </button>
         </form>
 
-        <div className="grid md:grid-cols-3 gap-8 bg-gray-100 p-8 rounded-lg p-10 shadow-grey shadow-2xl">
+        <div className="grid md:grid-cols-3 gap-8 bg-gray-100 rounded-lg p-10 shadow-grey shadow-2xl">
           <motion.div
-           initial={"hidden"}
-           whileInView={"show"}
-           viewport={{ once: false, amount: 0.7 }}
-           whileHover={{ scale: 1.05 }} // Slight scale-up on hover
-           whileTap={{ scale: 0.95 }} // Slight scale-down on tap
-           transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
-
-           className="text-center">
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+            whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+            transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+            className="text-center"
+          >
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -204,18 +132,18 @@ const MainContact = () => {
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-2">Gmail ID</h2>
-            <p className="text-gray-600">adsminicompany@gmail.com</p>
+            <p className="text-gray-600">connect@adsmini.com</p>
           </motion.div>
 
           <motion.div
-          initial={"hidden"}
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
-          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
-          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
-          
-          className="text-center">
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+            whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+            transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+            className="text-center"
+          >
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -233,19 +161,18 @@ const MainContact = () => {
               </svg>
             </div>
             <h2 className="text-xl font-bold mb-2">PHONE (LANDLINE)</h2>
-            <p className="text-gray-600">+91 8519022399, +91 747052664</p>
-            <p className="text-gray-600">+91 78287 58247</p>
+            <p className="text-gray-600">+91 8519022399</p>
           </motion.div>
 
           <motion.div
-          initial={"hidden"}
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          whileHover={{ scale: 1.05 }} // Slight scale-up on hover
-          whileTap={{ scale: 0.95 }} // Slight scale-down on tap
-          transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
-          
-          className="text-center">
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            whileHover={{ scale: 1.05 }} // Slight scale-up on hover
+            whileTap={{ scale: 0.95 }} // Slight scale-down on tap
+            transition={{ type: "spring", stiffness: 400, damping: 10 }} // Smooth spring effect
+            className="text-center"
+          >
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

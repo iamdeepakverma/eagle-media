@@ -5,6 +5,8 @@ import { fadeIn } from "../../Variants";
 import Aos from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { mainservice } from "../../Utils/Data";
+import { Helmet } from 'react-helmet-async'; // For SEO meta tags
+
 
 const MainServices = () => {
 
@@ -16,13 +18,19 @@ const MainServices = () => {
     <>
       {/* Hero Section */}
       <div >
-        <section className="relative h-[350px]  bg-[#9B7EBD]">        
-          <div className="relative flex items-center justify-center h-full">
-
-            <h1 className="text-5xl font-bold text-white">Services</h1>
-          </div>
-        </section>
-
+      <Helmet>
+        <title>Our Services | Adsmini - Digital Marketing Agency</title>
+        <meta 
+          name="description" 
+          content="Explore ads mini's comprehensive digital marketing services including SEO, social media management, content marketing, PPC, and more. Drive your business growth today!" 
+        />
+        <meta 
+          name="keywords" 
+          content="digital marketing services, SEO services, social media management, content marketing, PPC services, online advertising, business growth, digital marketing agency, web design,web development" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.adsmini.com/services" />
+      </Helmet>
         {/* What We Do Section */}
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
