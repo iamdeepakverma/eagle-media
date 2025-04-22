@@ -11,7 +11,7 @@ const PageLoader = () => {
           </svg>
           
         </div>
-        <p className="text-gray-700 text-lg font-semibold">Loading...mera</p>
+        <p className="text-gray-700 text-lg font-semibold">Loading...</p>
       </div>
     </div>
   )
