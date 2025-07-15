@@ -3,32 +3,7 @@ import { CheckCircle, Users, Clock, Target, MapPin, DollarSign, Mail, Phone, Sen
 export default function RecruitmentServices() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* Header */}
-      {/* <header className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">A</span>
-              </div>
-              <span className="text-xl font-bold text-gray-900">Adsmini</span>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Services
-              </a>
-              <a href="#why-us" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Why Us
-              </a>
-              <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Contact
-              </a>
-            </nav>
-          </div>
-        </div>
-      </header> */}
 
-      {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <span className="inline-block mb-4 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -53,7 +28,6 @@ export default function RecruitmentServices() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -64,7 +38,6 @@ export default function RecruitmentServices() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* IT Hiring Card */}
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-blue-600 p-6">
               <div className="mb-4">
                 <div className="flex items-center mb-3">
@@ -92,7 +65,6 @@ export default function RecruitmentServices() {
               </div>
             </div>
 
-            {/* BPO/KPO Hiring Card */}
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-green-600 p-6">
               <div className="mb-4">
                 <div className="flex items-center mb-3">
@@ -120,7 +92,6 @@ export default function RecruitmentServices() {
               </div>
             </div>
 
-            {/* Sales & Telecalling Card */}
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-purple-600 p-6">
               <div className="mb-4">
                 <div className="flex items-center mb-3">
@@ -148,7 +119,6 @@ export default function RecruitmentServices() {
               </div>
             </div>
 
-            {/* Campus Recruitment Card */}
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-orange-600 p-6">
               <div className="mb-4">
                 <div className="flex items-center mb-3">
@@ -176,7 +146,6 @@ export default function RecruitmentServices() {
               </div>
             </div>
 
-            {/* Bulk Hiring Card */}
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow border-l-4 border-l-red-600 p-6 md:col-span-2 lg:col-span-1">
               <div className="mb-4">
                 <div className="flex items-center mb-3">
@@ -207,7 +176,6 @@ export default function RecruitmentServices() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section id="why-us" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -275,7 +243,6 @@ export default function RecruitmentServices() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -326,59 +293,12 @@ export default function RecruitmentServices() {
                   <Send className="w-4 h-4 mr-2" />
                   Send Your Job Requirement
                 </button>
-                {/* <Link to="" className="w-full inline-flex items-center justify-center px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-50 font-medium rounded-lg transition-colors">
-                  <Send className="w-4 h-4 mr-2" />
-                  Contact Us
-                </Link> */}
+              
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      {/* <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">A</span>
-                </div>
-                <span className="text-xl font-bold">Adsmini</span>
-              </div>
-              <p className="text-gray-400 mb-4">
-                Your trusted recruitment partner helping companies across India hire faster, smarter, and
-                budget-friendly.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>IT Hiring</li>
-                <li>BPO/KPO Hiring</li>
-                <li>Sales & Telecalling</li>
-                <li>Campus Recruitment</li>
-                <li>Bulk Hiring</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>hiring@adsmini.com</li>
-                <li>+91 XXXXX XXXXX</li>
-                <li>PAN India Service</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Adsmini. All rights reserved.</p>
-          </div>
-        </div>
-      </footer> */}
     </div>
   )
 }

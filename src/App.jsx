@@ -6,12 +6,12 @@ import Navbar from "./comoponents/Navbar/Navbar";
 import Home from "./comoponents/Home/Home";
 import About from "./comoponents/About/About";
 import MainContact from "./comoponents/ContactUs/MainContact";
-import PageLoader from "./comoponents/Loader/PageLoader";
+// import PageLoader from "./comoponents/Loader/PageLoader";
 import { useEffect } from "react";
 import ScrollToTop from "./comoponents/ScrollToTop/ScrollToTop";
 import { ScrollToTopButton } from "./comoponents/ScrollToTop/ScrollToTopButton";
-import AlinaLoader from "./comoponents/Loader/AlinaLoader";
-import RecruitmentServices from "./comoponents/recruitment/recruitment-services";
+// import AlinaLoader from "./comoponents/Loader/AlinaLoader";
+import RecruitmentServices from "./comoponents/Recruitment/Recruitmentservices";
 
 function App() {
   const [loading, setLoading] = useState(true);
