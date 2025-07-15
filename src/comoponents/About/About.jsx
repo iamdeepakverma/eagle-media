@@ -73,12 +73,8 @@ const About = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center">About</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto text-center">
-              Adsmini.com is a leading digital marketing agency based in Indore,
-              India. We specialize in providing comprehensive digital marketing
-              solutions tailored to meet the unique needs of businesses. Our
-              goal is to help our clients achieve their online marketing
-              objectives through innovative strategies and cutting-edge
-              techniques
+              At Adsmini, we help startups, MSMEs, and growing companies solve two big problems – growth & hiring.
+With data-driven Digital Marketing and fast-paced Recruitment solutions, we become your full-stack growth partner.
             </p>
           </div>
         </section>

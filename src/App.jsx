@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import ScrollToTop from "./comoponents/ScrollToTop/ScrollToTop";
 import { ScrollToTopButton } from "./comoponents/ScrollToTop/ScrollToTopButton";
 import AlinaLoader from "./comoponents/Loader/AlinaLoader";
+import RecruitmentServices from "./comoponents/recruitment/recruitment-services";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,10 +27,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#F3F1F6]">
-      {loading ? (
-        <PageLoader />
-        // <AlinaLoader/>
-      ) : (
+     
         <Router>
           <Navbar />
           <ScrollToTop/>
@@ -38,12 +36,13 @@ function App() {
             <Route path="/services" element={<MainServices />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<MainContact />} />
+            <Route path="/Recruitment" element={<RecruitmentServices />} />
           </Routes>
           {/* <Whatapp/> */}
           <ScrollToTopButton/>
           <Footer />
         </Router> 
-      )}
+    
     </div>
   );
 }

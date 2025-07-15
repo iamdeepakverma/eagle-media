@@ -1,7 +1,7 @@
 export const mainservice = [
     {
       id: 1,
-      name: "Social Media Management",
+      name: "Social Media Marketing",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/7/74/Social_media_collection_2020s.png",
       description:
@@ -48,11 +48,67 @@ export const mainservice = [
     },
     {
       id: 7,
-      name: "Mobile app development",
+      name: "Google & Meta Ads",
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Play_App_Download.png",
+        "././7.png",
       description:
-        "Our team of app developers will create innovative and user-friendly mobile apps for iOS and Android platforms. We'll design and develop apps that meet your specific business needs and deliver exceptional user experiences.",
+        "🔹 Google Ads: Google par search, YouTube aur websites par ads dikhane ka platform. Keyword aur PPC bidding par kaam karta hai.🔹 Meta Ads: Facebook aur Instagram jaise platforms par ads dikhane ka tool. Audience targeting ke liye interests aur behavior ka use karta hai.",
+    },
+        {
+      id: 7,
+      name: "Performance Marketing",
+      image:
+        "././2.png",
+      description:
+        "A data-driven advertising approach focused on measurable results such as leads, app installs, website traffic, and sales. We run targeted campaigns on platforms like Google Ads, Facebook, and Instagram to maximize ROI.",
+    },
+        {
+      id: 7,
+      name: "Brand Awareness",
+      image:
+        "././8.png",
+      description:
+        "We create impactful campaigns that boost your brand visibility and help you connect with your audience. Ideal for startups or businesses looking to strengthen their market presence.",
+    },
+        {
+      id: 7,
+      name: "Recruitment Services",
+      image:
+        "././5.png",
+      description:
+        "Comprehensive hiring solutions tailored to your business needs. From sourcing and screening to onboarding, we help you find the right talent quickly and efficiently.",
+    },
+        {
+      id: 7,
+      name: "IT Recruitment",
+      image:
+        "././3.png",
+      description:
+        "Specialized in hiring top-notch tech professionals including developers, testers, and IT support roles. We understand the skill sets and requirements unique to the tech industry.",
+    },
+    {
+      id: 7,
+      name: "Sales, BPO, Telecalling Hiring",
+      image:
+        "././1.png",
+      description:
+        "We provide experienced and fresher candidates for customer service, outbound sales, and telecalling roles, helping companies build high-performing support and sales teams.",
+    },
+    {
+      id: 7,
+      name: "Entry-Level Hiring",
+      image:
+        "././4.png",
+      description:
+        "We assist companies in mass recruitment of fresh graduates and trainees across different domains, ensuring a smooth and fast hiring process.",
+    },
+    {
+      id: 7,
+      name: "PAN India Talent Hunt",
+      image:
+        "././6.png",
+      description:
+        "Our wide recruitment network helps source candidates from every corner of India. Whether you need local or remote talent, we’ve got you covered.",
     },
   ];
 

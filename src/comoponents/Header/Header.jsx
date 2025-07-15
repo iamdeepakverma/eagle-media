@@ -8,7 +8,7 @@ const Header = () => {
     <>
      <msection className="container mx-auto px-7 py-12 sm:py-1 md:py-16 sm:pb-0">
         <motion.div
-         variants={fadeIn('right', 0.2)}
+         variants={fadeIn('down', 0.2)}
          initial={"hidden"}
          whileInView={"show"}
          viewport={{ once: false,amount:0.7 }}
@@ -20,8 +20,10 @@ const Header = () => {
              animate={{ opacity: 1, y: 0 }}
              transition={{ delay: 0.1, duration: 0.6 }}
             
-            className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Social Media Growth and Management Expert
+            className="text-lg md:text-3xl font-bold leading-tight mb-6">
+              Marketing That Performs.<br/>
+              Hiring That Delivers.<br/>
+              AdsMini — Your Partner for Growth.
             </motion.h1>
             <motion.p 
              initial={{ opacity: 0, x: -50 }}
@@ -29,7 +31,7 @@ const Header = () => {
              transition={{ delay: 0.3, duration: 0.6 }}
             
             className="text-xl text-gray-600 mb-8">
-              We help brands grow and manage their social media
+               Digital Marketing | Recruitment Services | Startup Solutions
             </motion.p>
             <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
