@@ -89,9 +89,13 @@ const Navbar = () => {
             >
               About Us
             </Link>
-             <Link to="/Recruitment" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-                Recruitment
-              </Link>
+            <Link
+              to="/Recruitment"
+              className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium"
+              onClick={toggleMenu}
+            >
+              Recruitment
+            </Link>
             <Link
               to="/contact"
               className="bg-purple-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-purple-700 transition-colors"
